@@ -1,4 +1,4 @@
-import MaterialCategory from "../models/MasterData_Models/materialCategory.model.js";
+import MaterialCategory from "../../models/MasterData_Models/materialCategory.model.js";
 
 /**
  * Create Material Category

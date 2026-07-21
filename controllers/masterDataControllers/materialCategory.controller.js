@@ -1,4 +1,4 @@
-import * as materialCategoryService from "../services/materialCategory.service.js";
+import * as materialCategoryService from "../../services/masterDataServices/materialCategory.service.js";
 
 /**
  * Create Material Category

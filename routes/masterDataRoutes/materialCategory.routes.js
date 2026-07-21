@@ -8,16 +8,16 @@ import {
   activateMaterialCategory,
   deactivateMaterialCategory,
   searchMaterialCategories,
-} from "../controllers/materialCategory.controller.js";
+} from "../../controllers/masterDataControllers/materialCategory.controller.js";
 
-import validate from "../middlewares/validation.middleware.js";
+import validate from "../../middlewares/validation.middleware.js";
 
 import {
   createMaterialCategoryValidation,
   updateMaterialCategoryValidation,
   searchMaterialCategoryValidation,
   materialCategoryIdValidation,
-} from "../validation/MasterData_validation/materialCategory.validation.js";
+} from "../../validation/MasterData_validation/materialCategory.validation.js";
 
 const router = express.Router();
 
@@ -48,7 +48,7 @@ router.get(
  * Get Material Category By ID
  */
 router.get(
-  "/getById:id",
+  "/getById/:id",
   validate(materialCategoryIdValidation, "params"),
   getMaterialCategoryById
 );
