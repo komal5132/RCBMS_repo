@@ -42,7 +42,7 @@ router.get("/search", searchUnitOfMeasures);
  * Get Unit Of Measure By ID
  */
 router.get(
-  "getById/:id",
+  "/getById/:id",
   validate(unitOfMeasureIdValidation, "params"),
   getUnitOfMeasureById
 );
@@ -51,7 +51,7 @@ router.get(
  * Update Unit Of Measure
  */
 router.put(
-  "update/:id",
+  "/update/:id",
   validate(unitOfMeasureIdValidation, "params"),
   validate(updateUnitOfMeasureValidation),
   updateUnitOfMeasure

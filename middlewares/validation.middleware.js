@@ -20,8 +20,8 @@ const validate = (schema, property = "body") => {
       });
     }
 
-    // Replace request data with validated & sanitized data
-    req[property] = value;
+    // Merge validated values into the existing request object
+    Object.assign(req[property], value);
 
     next();
   };

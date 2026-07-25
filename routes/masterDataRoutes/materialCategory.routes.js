@@ -57,7 +57,7 @@ router.get(
  * Update Material Category
  */
 router.put(
-  "/update:id",
+  "/update/:id",
   validate(materialCategoryIdValidation, "params"),
   validate(updateMaterialCategoryValidation),
   updateMaterialCategory
